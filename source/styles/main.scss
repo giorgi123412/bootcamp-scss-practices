@@ -1,4 +1,13 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato');
+// End Fonts
+
 $color-1: #E2E6E7;
+$color-2: #FFC12D;
+$color-3: #F9B718;
+$color-4: #A47503;
+$color-5: #2C3E50;
+$color-6: #CFD2D3;
 
 * {
     padding: 0;
@@ -20,10 +29,56 @@ body {
         height: 150px;
         border: 1px solid $color-1;
         border-radius: 10px;
-        padding: 50px 57px;
+        padding: 42px 49px;
+        position: relative;
 
-        &.fa-exclamation{
+        &::before {
+            content: '\f12a';
+            font-family: 'FontAwesome';
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            color: $color-4;
             float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 7px solid $color-3;
+            background: $color-2;
+        }
+
+        &::after {
+            content: '\f00d';
+            font-family: 'FontAwesome';
+            font-weight: 400;
+            font-size: 15px;
+            color: #CFD2D3;
+            cursor: pointer;
+            position: absolute;
+            right: 17px;
+            top: 16px;
+
         }
     }
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $color-5;
+    font-size: 16px;
+    margin: -6px 0px 0px 92.2px;
+    letter-spacing: 0.37px;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 11px 0px 0px 92.2px;
+    letter-spacing: -0.39px;
+    line-height: 23.5px;
 }
