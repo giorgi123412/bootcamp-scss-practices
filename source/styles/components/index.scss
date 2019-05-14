@@ -1,0 +1,66 @@
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $color-5;
+    font-size: 16px;
+    margin: -6px 0px 0px 92.2px;
+    letter-spacing: 0.37px;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 11px 0px 0px 92.2px;
+    letter-spacing: -0.39px;
+    line-height: 23.5px;
+}
+.card-one{
+    background: $color-2;
+}
+.card-one::before {
+    content: '\f12a';
+    border: 7px solid $color-3;
+    background: $color-2;
+    color: $color-4;
+}
+.card-two{
+    background: $color-7;
+}
+.card-two::before {
+    content: '\f00c';
+    border: 7px solid $color-8;
+    background: $color-7;
+    color: $color-11;
+}
+.card-three{
+    background: $color-9;
+}
+.card-three::before{
+    content: '\f00d';
+    border: 7px solid $color-10;
+    background: $color-9;
+    color: $color-12;
+}
+.card-for{
+    background: $color-13;
+}
+.card-for::before{
+    content: '\f0e7';
+    border: 7px solid $color-14;
+    background: $color-13;
+    color: $color-15;
+}
+.card-five::before{
+    content: '\f0e7';
+    border: 7px solid $color-17;
+    background: $color-16;
+    color: $color-18;
+}
+.card-five{
+    width: 1170px!important;
+    grid-column: span 2;
+    background: $color-16;
+}

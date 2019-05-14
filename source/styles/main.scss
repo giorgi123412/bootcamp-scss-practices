@@ -2,35 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 // End Fonts
 
-$color-1: #E2E6E7;
-$color-2: #FFC12D;
-$color-3: #F9B718;
-$color-4: #A47503;
-$color-5: #2C3E50;
-$color-6: #CFD2D3;
-$color-7: #97E411;
-$color-8: #7BC200;
-$color-9: #FD7761;
-$color-10: #F55C43;
-$color-11: #558502;
-$color-12: #D52E13;
-$color-13: #6FD9FC;
-$color-14: #47B4F6;
-$color-15: #0787D4;
-$color-16: #A39CDC;
-$color-17: #8781BD;
-$color-18: #5B568E;
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
+@import 'reset';
+@import 'base';
+@import 'paletter';
+@import 'components/index';
 
 .container {
     width: 1170px;
@@ -77,69 +52,3 @@ body {
     }
 }
 
-.title {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: $color-5;
-    font-size: 16px;
-    margin: -6px 0px 0px 92.2px;
-    letter-spacing: 0.37px;
-}
-
-.text {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    margin: 11px 0px 0px 92.2px;
-    letter-spacing: -0.39px;
-    line-height: 23.5px;
-}
-.card-one{
-    background: $color-2;
-}
-.card-one::before {
-    content: '\f12a';
-    border: 7px solid $color-3;
-    background: $color-2;
-    color: $color-4;
-}
-.card-two{
-    background: $color-7;
-}
-.card-two::before {
-    content: '\f00c';
-    border: 7px solid $color-8;
-    background: $color-7;
-    color: $color-11;
-}
-.card-three{
-    background: $color-9;
-}
-.card-three::before{
-    content: '\f00d';
-    border: 7px solid $color-10;
-    background: $color-9;
-    color: $color-12;
-}
-.card-for{
-    background: $color-13;
-}
-.card-for::before{
-    content: '\f0e7';
-    border: 7px solid $color-14;
-    background: $color-13;
-    color: $color-15;
-}
-.card-five::before{
-    content: '\f0e7';
-    border: 7px solid $color-17;
-    background: $color-16;
-    color: $color-18;
-}
-.card-five{
-    width: 1170px!important;
-    grid-column: span 2;
-    background: $color-16;
-}
